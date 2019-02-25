@@ -135,7 +135,7 @@ var main = {
             + "<span id='lights_on' class='link' onclick='lights.toggle(true)'>白色</span> | "
             + "<span id='lights_off' class='link' onclick='lights.toggle(false)'>黑色</span><br><br>"
             + "存档: "
-            + "<span id='download_save' class='link' onclick='settings.download_save()'>下载存档点</span> | "
+            + "<span id='download_save' class='link' onclick='settings.download_save()'>下载存档</span> | "
             + "<label class='link'><input id='upload_save' type='file'/>上传存档</label> | "
             + "<span id='restart_game'>重新开始</span><br>"
             + "自动保存间隔:<br>"

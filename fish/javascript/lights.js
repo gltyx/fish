@@ -25,7 +25,7 @@ var lights = {
             $("#page_style")
                 .attr("href", "css/" + name + ".css");
             $("#lights")
-                .text("lights " + (this.lights ? "on" : "off"));
+                .text((this.lights ? "开" : "关") + "灯");
                 
             this.lights = on;
 

@@ -56,7 +56,7 @@ var cnItems = {
     'Lemon Shark': '柠檬鲨',
     'Tiger Shark': '虎鲨',
     'Black Drum': '石首鱼',
-    '': '',
+    'Tarpon': '大海鲢',
     '': '',
     '': '',
     '': '',

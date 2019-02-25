@@ -438,7 +438,7 @@ var resources = {
         tarpon: {
             display: "Tarpon",
             internal: "tarpon",
-            message: "shiny beasts, they often jump and thrash as they are reeled in",
+            message: "发亮的野兽，他们经常在被卷进去时跳跃和打翻",
             price: 45,
             max: 1,
             chance: 5,
