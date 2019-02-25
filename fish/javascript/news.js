@@ -208,7 +208,7 @@ var news = {
     create_element(text) {
         $("<div>")
             .attr("id", "news_text")
-            .text(text)
+            .text(cnItem(text))
             .one("webkitAnimationEnd oanimationend msAnimationEnd animationend", function() {
                 $(this)
                     .remove();

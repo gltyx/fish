@@ -205,7 +205,7 @@ var business = {
 
         let news_section = $("<div>")
             .attr("id", "news_section")
-            .attr("display", "News")
+            .attr("display", "新闻")
             .addClass("before section_span")
             .appendTo(sections);
         $("<div>")
@@ -215,13 +215,13 @@ var business = {
 
         let management = $("<div>")
             .attr("id", "management_section")
-            .attr("display", "Management")
+            .attr("display", "管理")
             .addClass("before section")
             .appendTo(sections);
 
         let investments = $("<div>")
             .attr("id", "investments_section")
-            .attr("display", "Investments")
+            .attr("display", "投资")
             .addClass("before section section_center section_top")
             .appendTo(sections);
 
@@ -250,7 +250,7 @@ var business = {
         if (this.vendor.shown.length == 0) {
             $("<div>")
                 .attr("id", "no_investments")
-                .text("No investments available!")
+                .text("没有可用的投资！")
                 .appendTo(investments);
         } else {
             $("#hire_worker_button")
@@ -280,7 +280,7 @@ var business = {
             $("<div>")
                 .attr("id", index + "_workers_header")
                 .addClass("counter_header")
-                .text(area.display)
+                .text(cnItem(area.display))
                 .appendTo(parent);
             $("<div>")
                 .addClass("counter_break")
@@ -505,20 +505,20 @@ var business = {
             .appendTo(above);
         $("<div>")
             .attr("id", "morality_header")
-            .text("Morality: " + opportunities.morality)
+            .text("道德: " + opportunities.morality)
             .appendTo(morality_section);
         $("<div>")
             .addClass("counter_break")
             .appendTo(morality_section);
         $("<span>")
             .attr("id", "morality_meter")
-            .text(opportunities.get_morality_text())
+            .text(cnItem(opportunities.get_morality_text()))
             .appendTo(morality_section);
         
         buttons.create({
             parent: "above_section",
             id: "opportunities",
-            text: "Management and Investments",
+            text: "管理和投资",
             on_click: function() {
                 buttons.remove("opportunities");
 

@@ -8,7 +8,7 @@ var shop = {
                 parent: "above_section",
                 id: "sell_fish",
                 text: function() {
-                    return "Sell fish ($" + main.stringify(shop.fish_value(false)) + ")";
+                    return "卖鱼 ($" + main.stringify(shop.fish_value(false)) + ")";
                 },
                 on_click: function() {
                     shop.sell_fish();

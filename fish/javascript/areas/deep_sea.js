@@ -2,7 +2,7 @@ var deep_sea = {
     internal: "deep_sea",
     display: "Deep Sea",
     unlock: "spear_fishing",
-    license: "Deep Sea permit",
+    license: "深海许可证",
     ocean: true,
     workers: {
         license: "Deep Sea Barges",

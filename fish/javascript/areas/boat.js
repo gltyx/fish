@@ -23,7 +23,7 @@ var boat = {
 
         $("<div>")
             .attr("id", "boat_counters")
-            .attr("display", "Boat")
+            .attr("display", "船")
             .addClass("before counter")
             .fadeIn()
             .appendTo($("#resource_counters"));
@@ -45,7 +45,7 @@ var boat = {
                 data: {
                     parent: "misc_section",
                     id: id,
-                    text: item.display + " ($" + main.stringify(item.price) + ")",
+                    text: cnItem(item.display) + " ($" + main.stringify(item.price) + ")",
                     on_click: function() {
                         boat.purchase_part(item);
                         shop.remove_item(id);
@@ -77,7 +77,7 @@ var boat = {
         }
 
         $("<div>")
-            .text(item.display)
+            .text(cnItem(item.display))
             .addClass("value")
             .hide()
             .fadeIn()

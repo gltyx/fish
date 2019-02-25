@@ -34,7 +34,7 @@ var counters = {
         // create tackle counter
         $("<div>") 
             .attr("id", "tackle_counters")
-            .attr("display", "Tackle")
+            .attr("display", "钓具")
             .addClass("before tackle counter")
             .hide()
             .appendTo(parent);
@@ -190,7 +190,7 @@ var counters = {
                     .appendTo(parent);
             }
             let header = $("<div>")
-                .text(window[item.area].display)
+                .text(cnItem(window[item.area].display))
                 .addClass("counter_header")
                 .fadeIn()
                 .appendTo(parent);

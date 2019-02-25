@@ -216,7 +216,7 @@ var main = {
 
         let head = $("<h3>")
             .addClass("centered")
-            .text(header)
+            .text(cnItem(header))
             .appendTo(popup);
         $("<div>")
             .addClass("divider")
@@ -234,7 +234,7 @@ var main = {
             buttons.create({
                 parent: "content",
                 id: "close",
-                text: "Close",
+                text: "关闭",
                 breaks: 0,
                 on_click: function() {
                     $(overlay)

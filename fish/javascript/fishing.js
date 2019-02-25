@@ -17,7 +17,7 @@ var fishing = {
         buttons.create({
             parent: "fishing_buttons",
             id: "cast_out_line",
-            text: "Cast out line",
+            text: "抛出线",
             on_click: function() {
                 fishing.toggle_state(areas.current_area.state);
             }
@@ -25,7 +25,7 @@ var fishing = {
         buttons.create({
             parent: "fishing_buttons",
             id: "reel_in_line",
-            text: "Reel in line",
+            text: "收回线",
             disabled: true,
             on_click: function() {
                 fishing.toggle_state(areas.current_area.state);
