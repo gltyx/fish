@@ -26,7 +26,7 @@ var areas = {
                 buttons.create({
                     parent: "area_selector",
                     id: index,
-                    text: area.display,
+                    text: cnItem(area.display),
                     hide: true,
                     on_click: function() {
                         areas.switch_area(area);

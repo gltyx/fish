@@ -31,10 +31,10 @@ var buttons = {
             let text = (typeof options.text == "string" ? options.text : options.text());
             if (header != null) {
                 $(element)
-                    .html($(element).html() + "<span class='button_text'>" + cnItem(text) + "</span>");
+                    .html($(element).html() + "<span class='button_text'>" + text + "</span>");
             } else {
                 $(element)
-                    .html("<span class='button_text'>" + cnItem(text) + "</span>");
+                    .html("<span class='button_text'>" + text + "</span>");
             }
         }
 

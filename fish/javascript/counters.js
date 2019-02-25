@@ -20,7 +20,7 @@ var counters = {
         // create bait counter
         $("<div>")
             .attr("id", "bait_counters")
-            .attr("display", "Bait")
+            .attr("display", "鱼饵")
             .addClass("before counter")
             .hide()
             .appendTo(parent);
@@ -50,7 +50,7 @@ var counters = {
         // create fish counter
         let fish = $("<div>")
             .attr("id", "fish_counters")
-            .attr("display", "Fish")
+            .attr("display", "鱼")
             .addClass("before counter")
             .hide()
             .appendTo(parent);

@@ -44,7 +44,7 @@ var lake = {
         buttons.create({
             parent: "resource_buttons",
             id: "forage_for_worms",
-            text: "寻找蠕虫",
+            text: "Forage for worms",
             on_click: function() {
                 fishing.catch(resources.bait.worms, true);
                 $("#cast_out_line_button")

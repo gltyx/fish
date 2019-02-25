@@ -26,7 +26,7 @@ var shop = {
             data: {
                 parent: "misc_section",
                 id: "buy_fuel",
-                text: "Fuel ($5)",
+                text: "燃料 ($5)",
                 on_click: function() {
                     shop.purchase_item(resources.fuel);
                 },
@@ -71,7 +71,7 @@ var shop = {
         } else {
             let value = this.fish_value(false);
             $("#sell_fish_button")
-                .text("Sell fish ($" + value + ")")
+                .text("卖鱼 ($" + value + ")")
                 .prop("disabled", value == 0);
         }
     },
@@ -86,7 +86,7 @@ var shop = {
         for (let name of names) {
             $("<div>")
                 .attr("id", name.toLowerCase() + "_section")
-                .attr("display", name)
+                .attr("display", cnItem(name))
                 .addClass("before section")
                 .appendTo(parent);
         }
@@ -170,7 +170,7 @@ var shop = {
         this.update_money(this.fish_value(true));
 
         $("#sell_fish_button")
-            .text("Sell fish ($0)");
+            .text("卖鱼 ($0)");
     },
 
     purchase_item(item) {
@@ -237,7 +237,7 @@ var shop = {
             data: {
                 parent: section + "_section",
                 id: item.internal,
-                text: item.display + " ($" + main.stringify(item.price) + ")",
+                text: cnItem(item.display) + " ($" + main.stringify(item.price) + ")",
                 on_click: function() {
                     shop.purchase_item(item);
                 },

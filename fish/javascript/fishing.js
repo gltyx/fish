@@ -17,7 +17,7 @@ var fishing = {
         buttons.create({
             parent: "fishing_buttons",
             id: "cast_out_line",
-            text: "抛出线",
+            text: "Cast out line",
             on_click: function() {
                 fishing.toggle_state(areas.current_area.state);
             }
@@ -25,7 +25,7 @@ var fishing = {
         buttons.create({
             parent: "fishing_buttons",
             id: "reel_in_line",
-            text: "收线",
+            text: "Reel in line",
             disabled: true,
             on_click: function() {
                 fishing.toggle_state(areas.current_area.state);
@@ -166,7 +166,7 @@ var fishing = {
                 counters.create_counter(fish, area + "_counters");
             }
 
-            messenger.write_message(fish.display + ": " + fish.message, true);
+            messenger.write_message(cnItem(fish.display) + ": " + fish.message, true);
         }
 
         if (fish.count == null) {
