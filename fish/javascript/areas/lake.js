@@ -27,7 +27,7 @@ var lake = {
             if (resources.bait.worms.count == 0 && this.state.is_fishing) {
                 fishing.toggle_state(this.state);
 
-                messenger.write_message("won't catch much without any worms...", true);
+                messenger.write_message("没有任何蠕虫就不会抓到太多......", true);
             }
         }
     },

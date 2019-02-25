@@ -124,10 +124,10 @@ var fishing = {
             .prop("disabled", !state.is_fishing || (worms.count == worms.max));
 
         if (state.is_fishing && !state.reel_in_message) {
-            messenger.write_message("reeling in your line is always full of tedium", true);
+            messenger.write_message("收线总是很无聊", true);
             state.reel_in_message = true;
         } else if (!state.cast_out_message) {
-            messenger.write_message("you cast out your line as far as your arm permits", true);
+            messenger.write_message("只要你的胳膊允许，你就把钓索抛出去", true);
             state.cast_out_message = true;
         }
 
