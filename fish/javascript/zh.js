@@ -57,7 +57,7 @@ var cnItems = {
     'Tiger Shark': '虎鲨',
     'Black Drum': '石首鱼',
     'Tarpon': '大海鲢',
-    '': '',
+    'Total fish caught': '总捕鱼量',
     '': '',
     '': '',
     '': '',

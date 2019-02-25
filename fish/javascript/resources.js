@@ -1,7 +1,7 @@
 var resources = {
     money: {
         internal: "money",
-        message: "money often costs too much, but I doubt the fish care",
+        message: "钱常常花得太多，但我怀疑鱼不在乎",
         count: 0,
         total: 0
     },
@@ -100,7 +100,7 @@ var resources = {
         worms: {
             display: "Worms",
             internal: "worms",
-            message: "writhing around in the mud, these would make good bait",
+            message: "在泥里蠕动，这是很好的诱饵",
             max_caught: 3,
             price: 1,
             max: 30
@@ -108,7 +108,7 @@ var resources = {
         minnows: {
             display: "Minnows",
             internal: "minnows",
-            message: "these would make excellent bait for larger fish",
+            message: "这是钓大鱼的绝佳诱饵",
             max_caught: 2,
             max: 20,
             price: 1,
@@ -124,42 +124,42 @@ var resources = {
         guppies: {
             display: "Guppies",
             internal: "guppies",
-            message: "small fish to catch big fish",
+            message: "小鱼能钓大鱼",
             price: 2,
             max: 20
         },
         insects: {
             display: "Insects",
             internal: "insects",
-            message: "the nastier the critter, the tastier it is",
+            message: "越难吃的动物，就越美味",
             price: 3,
             max: 20
         },
         mussels: {
             display: "Mussels",
             internal: "mussels",
-            message: "hard shells protect their squishy and edible interior",
+            message: "坚硬的外壳保护着它们柔软可食的内部",
             price: 4,
             max: 20
         },
         crustaceans: {
             display: "Crustaceans",
             internal: "crustaceans",
-            message: "all manner of shrimp and krill fill the bucket",
+            message: "桶里装满各种虾和磷虾",
             price: 5,
             max: 15
         },
         squid: {
             display: "Squid",
             internal: "squid",
-            message: "tentacled, translucent, smelly and yet perfect bait",
+            message: "触手状，半透明，气味难闻，但完美的诱饵",
             price: 6,
             max: 15
         },
         ground_fish: {
             display: "Ground Fish",
             internal: "ground_fish",
-            message: "various fish guts and meat compiled for large hunters",
+            message: "各种各样的鱼内脏和肉都是为大型猎人准备的",
             price: 7,
             max: 5
         },
@@ -215,7 +215,7 @@ var resources = {
         bass: {
             display: "Bass",
             internal: "bass",
-            message: "nothing special but it will sell",
+            message: "没什么特别的，但是会卖出去的",
             header: true,
             price: 5,
             max: 10,
@@ -230,7 +230,7 @@ var resources = {
         sturgeon: {
             display: "Sturgeon",
             internal: "sturgeon",
-            message: "this one thrashed wildly before submitting to the line",
+            message: "这一只在服从命令之前被猛击了一顿",
             price: 10,
             max: 5,
             chance: 45,
@@ -249,7 +249,7 @@ var resources = {
         chub: {
             display: "Chub",
             internal: "chub",
-            message: "a large fish, looks to have been a fighter",
+            message: "一条大鱼，看来曾经是一个战士",
             price: 15,
             max: 3,
             chance: 30,
@@ -269,7 +269,7 @@ var resources = {
         salmon: {
             display: "Salmon",
             internal: "salmon",
-            message: "jumping fish going upstream are easily caught",
+            message: "逆流而上的跳鱼很容易捕到",
             header: true,
             price: 10,
             max: 10,
@@ -290,7 +290,7 @@ var resources = {
         trout: {
             display: "Trout",
             internal: "trout",
-            message: "calm and oily, these fish are rather uninteresting",
+            message: "这些鱼又淡又油，很无趣",
             price: 15,
             max: 5,
             chance: 40,
@@ -315,7 +315,7 @@ var resources = {
         crawdads: {
             display: "Crawdads",
             internal: "crawdads",
-            message: "also known as crayfish, these small crustacean omnivores go well with corn",
+            message: "这种小甲壳类杂食动物也被称为小龙虾，很适合与玉米搭配",
             price: 15,
             max: 5,
             chance: 40,
@@ -330,7 +330,7 @@ var resources = {
         pike: {
             display: "Pike",
             internal: "pike",
-            message: "these night hunters are often caught in choppy water",
+            message: "这些夜间捕猎者经常在波涛汹涌的水中被捕",
             price: 20,
             max: 3,
             chance: 30,
@@ -352,7 +352,7 @@ var resources = {
         redfish: {
             display: "Redfish",
             internal: "redfish",
-            message: "a popular catch, often used in soup",
+            message: "一种流行的鱼，常用于汤中",
             header: true,
             price: 25,
             max: 10,
@@ -373,7 +373,7 @@ var resources = {
         mackerel: {
             display: "Mackerel",
             internal: "mackerel",
-            message: "these come in large schools, and are a tasty treat to predators",
+            message: "它们成群结队，是食肉动物的美味佳肴",
             price: 30,
             max: 5,
             chance: 40,
@@ -398,7 +398,7 @@ var resources = {
         crabs: {
             display: "Crabs",
             internal: "crabs",
-            message: "they may walk sideways but they will walk sideways into your cages",
+            message: "它们可能会侧着走，但它们会侧着走到你的笼子里",
             price: 30,
             max: 5,
             chance: 40,
@@ -413,7 +413,7 @@ var resources = {
         black_drum: {
             display: "Black Drum",
             internal: "black_drum",
-            message: "this bottomfeeder won't hesistate to fight the line",
+            message: "这个底部给料机不会站起来与这条线搏斗的。",
             price: 35,
             max: 3,
             chance: 30,
@@ -460,7 +460,7 @@ var resources = {
         snapper: {
             display: "Snapper",
             internal: "snapper",
-            message: "even though they are common, they have been known to be aggressive",
+            message: "尽管它们很常见，但也被认为具有攻击性",
             header: true,
             price: 45,
             max: 10,
@@ -481,7 +481,7 @@ var resources = {
         hogfish: {
             display: "Hogfish",
             internal: "hogfish",
-            message: "a beautiful pig fish, if one can exist",
+            message: "一条美丽的猪鱼，如果可以存在的话",
             price: 50,
             max: 7,
             chance: 40,
@@ -502,7 +502,7 @@ var resources = {
         moray_eel: {
             display: "Moray Eel",
             internal: "moray_eel",
-            message: "when a fish bites your heel and it looks like an eel...",
+            message: "当一条鱼咬了你的脚跟，它看起来像条鳗鱼。",
             price: 55,
             max: 5,
             chance: 30,
@@ -521,7 +521,7 @@ var resources = {
         barracuda: {
             display: "Barracuda",
             internal: "barracuda",
-            message: "long, thin, aggressive and eager to bite anything shiny",
+            message: "又长又瘦，咄咄逼人，渴望咬任何闪亮的东西",
             price: 70,
             max: 3,
             chance: 10,
@@ -536,7 +536,7 @@ var resources = {
         lemon_shark: {
             display: "Lemon Shark",
             internal: "lemon_shark",
-            message: "a sand colored shark, its meat is a delicacy to some",
+            message: "一种沙色鲨鱼，它的肉对某些人来说是美味佳肴",
             price: 80,
             max: 1,
             chance: 5,
@@ -558,7 +558,7 @@ var resources = {
         lobster: {
             display: "Lobster",
             internal: "lobster",
-            message: "two beady eyes flanked by two large claws",
+            message: "两只圆圆的眼睛两侧有两只大爪子",
             header: true,
             price: 60,
             max: 10,
@@ -573,7 +573,7 @@ var resources = {
         grouper: {
             display: "Grouper",
             internal: "grouper",
-            message: "these large fish are often considered the bass of the sea",
+            message: "这些大鱼通常被认为是海里的鲈鱼",
             price: 65,
             max: 7,
             chance: 40,
@@ -594,7 +594,7 @@ var resources = {
         tuna: {
             display: "Tuna",
             internal: "tuna",
-            message: "swift swimming fish that humans and cats seem to love",
+            message: "快速游动的鱼，人类和猫似乎喜欢",
             price: 70,
             max: 5,
             chance: 30,
@@ -619,7 +619,7 @@ var resources = {
         swordfish: {
             display: "Swordfish",
             internal: "swordfish",
-            message: "extremely fast and elusive with a large \"sword\" on its head",
+            message: "它的脑袋上有个大的“剑”，非常快又难以捉摸",
             price: 80,
             max: 3,
             chance: 10,
@@ -640,7 +640,7 @@ var resources = {
         tiger_shark: {
             display: "Tiger Shark",
             internal: "tiger_shark",
-            message: "a nocturnal hunter that will eat almost anything, including you",
+            message: "夜间猎食者，几乎可以吃任何东西，包括你",
             price: 100,
             max: 1,
             chance: 5,
@@ -666,7 +666,7 @@ var resources = {
         whitefish: {
             display: "Whitefish",
             internal: "whitefish",
-            message: "these fish typically stay near the sea floor",
+            message: "这些鱼通常呆在海底附近",
             header: true,
             price: 70,
             max: 10,
@@ -691,7 +691,7 @@ var resources = {
         lingcod: {
             display: "Lingcod",
             internal: "lingcod",
-            message: "voracious and ugly, they are surprisingly tasty",
+            message: "它们既贪婪又丑陋，美味得令人吃惊",
             price: 75,
             max: 7,
             chance: 40,
@@ -712,7 +712,7 @@ var resources = {
         stonefish: {
             display: "Stonefish",
             internal: "stonefish",
-            message: "venomous fish that are commonly mistaken for rocks or coral",
+            message: "通常被误认为是岩石或珊瑚的有毒鱼类",
             price: 80,
             max: 5,
             chance: 30,
@@ -733,7 +733,7 @@ var resources = {
         marlin: {
             display: "Marlin",
             internal: "marlin",
-            message: "it's a swordfish, if the swordfish had a better sword and a bigger body",
+            message: "这是剑鱼，如果剑鱼有更好的剑和更大的身体",
             price: 100,
             max: 3,
             chance: 15,
@@ -758,7 +758,7 @@ var resources = {
         mako_shark: {
             display: "Mako Shark",
             internal: "mako_shark",
-            message: "the fastest species of shark, it's known to rip prey apart",
+            message: "鲨鱼里面速度最快的一种，它能把猎物撕成碎片",
             price: 125,
             max: 1,
             chance: 10,
@@ -779,7 +779,7 @@ var resources = {
         thresher_shark: {
             display: "Thresher Shark",
             internal: "thresher_shark",
-            message: "these predators use their long tail to slap and stun their prey",
+            message: "这些食肉动物用它们的长尾巴拍打和击晕猎物",
             price: 175,
             max: 1,
             chance: 5,
