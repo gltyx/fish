@@ -7,7 +7,7 @@ var counters = {
             .attr("id", "below_messages")
             .appendTo(parent);
         let money = $("<div>")
-            .text("Money: $")
+            .text("金钱: $")
             .appendTo(below);
         $("<span>")
             .attr("id", "money_count")

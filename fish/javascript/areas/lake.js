@@ -1,6 +1,6 @@
 var lake = {
     internal: "lake",
-    display: "Lake",
+    display: "湖",
     workers: {
         license: "Local Group Control",
         description: "Send out \"influencers\" to spread false rumors about specific lakes to free them for your workers",
@@ -44,7 +44,7 @@ var lake = {
         buttons.create({
             parent: "resource_buttons",
             id: "forage_for_worms",
-            text: "Forage for worms",
+            text: "寻找蠕虫",
             on_click: function() {
                 fishing.catch(resources.bait.worms, true);
                 $("#cast_out_line_button")

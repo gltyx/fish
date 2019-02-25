@@ -131,21 +131,21 @@ var main = {
     },
 
     show_settings() {
-        let text = $.parseHTML("<div id='settings_div'>Color theme: "
-            + "<span id='lights_on' class='link' onclick='lights.toggle(true)'>light</span> | "
-            + "<span id='lights_off' class='link' onclick='lights.toggle(false)'>dark</span><br><br>"
-            + "Saves: "
-            + "<span id='download_save' class='link' onclick='settings.download_save()'>download save</span> | "
-            + "<label class='link'><input id='upload_save' type='file'/>upload save</label> | "
-            + "<span id='restart_game'>restart game</span><br>"
-            + "Auto save every:<br>"
+        let text = $.parseHTML("<div id='settings_div'>主题颜色: "
+            + "<span id='lights_on' class='link' onclick='lights.toggle(true)'>白色</span> | "
+            + "<span id='lights_off' class='link' onclick='lights.toggle(false)'>黑色</span><br><br>"
+            + "存档: "
+            + "<span id='download_save' class='link' onclick='settings.download_save()'>下载存档点</span> | "
+            + "<label class='link'><input id='upload_save' type='file'/>上传存档</label> | "
+            + "<span id='restart_game'>重新开始</span><br>"
+            + "自动保存间隔:<br>"
             + "<p id='save_intervals'>"
-            + "<span id='3_minutes'>three minutes</span> | "
-            + "<span id='5_minutes'>five minutes</span> | "
-            + "<span id='10_minutes'>ten minutes</span></p><br>"
-            + "Dev tools: "
-            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>enable</span> | "
-            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>disable</span><br><br>"
+            + "<span id='3_minutes'>3分钟</span> | "
+            + "<span id='5_minutes'>5分钟</span> | "
+            + "<span id='10_minutes'>10分钟</span></p><br>"
+            + "开发工具: "
+            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>启用</span> | "
+            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>禁用</span><br><br>"
             + "<span id='version'></span>"
             + "<br></div>");
         this.create_popup("Settings", text);
@@ -177,7 +177,7 @@ var main = {
         settings.toggle_dev_tools((settings.dev == null ? false : settings.dev));
 
         $("#version")
-            .text("Current version: " + this.version);
+            .text("当前版本: " + this.version);
     },
 
     show_about() {

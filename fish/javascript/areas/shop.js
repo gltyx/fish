@@ -1,6 +1,6 @@
 var shop = {
     internal: "shop",
-    display: "Shop",
+    display: "商店",
 
     buttons: {
         sell_fish: {
@@ -259,7 +259,7 @@ var shop = {
                 data: {
                     parent: "misc_section",
                     id: resource.internal + "_auto_buy",
-                    text: "Auto buy " + resource.display + " ($" + main.stringify(item.price) + ")",
+                    text: "自动购买 " + cnItem(resource.display) + " ($" + main.stringify(item.price) + ")",
                     on_click: function() {
                         counters.add_auto_buy(resource);
                         shop.remove_item(resource.internal + "_auto_buy");
@@ -304,7 +304,7 @@ var shop = {
                 $("<p>")
                     .attr("id", "no_sale_" + id)
                     .addClass("no_sale")
-                    .text("Nothing for sale!")
+                    .text("没什么可卖的!")
                     .appendTo(parent);
             }
         }

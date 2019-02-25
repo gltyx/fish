@@ -1,4 +1,4 @@
-# 钓鱼（Fish）
+# 钓鱼公司（Fishing Enterprises）
 
 
 汉化版：http://likexia.gitee.io/fish/index.html

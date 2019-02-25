@@ -2,7 +2,7 @@ var business = {
     internal: "business",
     display: "Business",
     unlock: "deep_sea",
-    license: "Buy the Shop",
+    license: "买下商店",
     purchased: {
         price: 15000
     },
