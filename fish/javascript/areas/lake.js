@@ -1,6 +1,6 @@
 var lake = {
     internal: "lake",
-    display: "湖",
+    display: "Lake",
     workers: {
         license: "Local Group Control",
         description: "Send out \"influencers\" to spread false rumors about specific lakes to free them for your workers",

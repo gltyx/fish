@@ -1,6 +1,6 @@
 var shop = {
     internal: "shop",
-    display: "商店",
+    display: "Shop",
 
     buttons: {
         sell_fish: {

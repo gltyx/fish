@@ -212,7 +212,7 @@ var counters = {
         let element = $("<div>")
             .attr("id", item.internal)
             .addClass("value")
-            .text(item.display + ": ")
+            .text(cnItem(item.display) + ": ")
             .fadeIn()
             .appendTo(parent);
         $("<span>")
