@@ -63,7 +63,7 @@ var cnItems = {
     'Stonefish': '石鱼',
     'Lingcod': '鳕鱼',
     'Mako Shark': '灰鲭鲨',
-    '': '',
+    'Thresher Shark': '长尾鲨',
     '': '',
     '': '',
     '': '',
