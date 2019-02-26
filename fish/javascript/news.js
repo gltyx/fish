@@ -276,9 +276,9 @@ var news = {
                     days: days
                 }
 
-                let result = country + " " + modifier + " \"" + area.display + "\" fish.";
+                let result = cnItem(country) + " " + modifier + " \"" + cnItem(area.display) + "\" 鱼.";
 
-                messenger.write_message(result + " No profits will be gained from these fish for " + days + " days.");
+                messenger.write_message(result + " 这些鱼不会获得任何利润 " + days + " 天。");
                 this.create_element(result);
 
                 fishing.locked_areas.push({
