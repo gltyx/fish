@@ -355,7 +355,7 @@ var business = {
     purchase() {
         $("#shop_button")
             .attr("id", "business_button")
-            .text("Business")
+            .text("商业")
             .off("click")
             .click(function() {
                 areas.switch_area(business);

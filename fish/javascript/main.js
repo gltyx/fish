@@ -143,9 +143,9 @@ var main = {
             + "<span id='3_minutes'>3分钟</span> | "
             + "<span id='5_minutes'>5分钟</span> | "
             + "<span id='10_minutes'>10分钟</span></p><br>"
-            + "开发工具: "
-            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>启用</span> | "
-            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>禁用</span><br><br>"
+//            + "开发工具: "
+//            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>启用</span> | "
+//            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>禁用</span><br><br>"
             + "<span id='version'></span>"
             + "<br></div>");
         this.create_popup("Settings", text);
