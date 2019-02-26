@@ -121,12 +121,12 @@ var main = {
     },
 
     end() {
-        let text = $.parseHTML("Congratulations you've reached the end of the game -- for now!<br><br>"
-            + "<span id='restart_2' class='link' onclick='settings.restart_game()'>Click here to restart the game.</span><br><br>"
-            + "You can <a class='link' target='_blank' href='https://twitter.com/FishEnterprises'>follow my Twitter</a> for releases, "
-            + "donate via <a class='link' target='_blank' href='https://paypal.me/fishingenterprises'>Paypal</a> "
-            + "or support me and get frequent updates and changelogs with <a class='link' target='_blank' href='https://www.patreon.com/fishingenterprises'>Patreon</a>.<br><br>"
-            + "I hope you enjoyed your time and continue playing! <>< <>< <><");
+        let text = $.parseHTML("恭喜你已经到了游戏的终点 - 现在！<br><br>"
+            + "<span id='restart_2' class='link' onclick='settings.restart_game()'>点击此处重新开始游戏。</span><br><br>"
+            + "你可以 <a class='link' target='_blank' href='https://twitter.com/FishEnterprises'>在 Twitter 上关注我</a> 获取最新动态。 "
+            + "捐赠我们可以通过 <a class='link' target='_blank' href='https://paypal.me/fishingenterprises'>Paypal</a> "
+            + "或者 <a class='link' target='_blank' href='https://www.patreon.com/fishingenterprises'>Patreon</a> 支持我，并获得频繁的更新和更新日志.<br><br>"
+            + "我希望你喜欢并继续玩！ <>< <>< <><");
         this.create_popup("Goodbye", text);
     },
 

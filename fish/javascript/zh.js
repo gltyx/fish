@@ -119,10 +119,10 @@ var cnItems = {
     "You've known who she is talking about for many years. Something doesn't add up.": '你已经知道她多年来一直在谈论谁。 有些东西没有加起来。',
     'Deep Sea Barges': '深海驳船',
     'Fleets of large ships to harvest the darkest corners of every ocean': '大型舰队的船队收获每个海洋最黑暗的角落',
-    '': '',
-    '': '',
-    '': '',
-    '': '',
+    'Sweden': '瑞典',
+    'The Next Level': '下一级',
+    "It's time to take your business to the next level: create your dream enterprise": '现在是时候将您的业务提升到一个新的水平：创建您的梦想企业',
+    'Goodbye': '再见',
     '': '',
     '': '',
     '': '',
@@ -145,7 +145,7 @@ function cnItem(text) {
     //数组里面没有的，原样返回
     for (var i in cnItems) {
         if (text != i) {
-//            console.log("需汉化的英文Item：" + text);
+            console.log("需汉化的英文Item：" + text);
             return text;
         }
     }
