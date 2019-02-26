@@ -112,13 +112,13 @@ var cnItems = {
     'Camille has no right to be using your business and intellectual property in her game without your permission.': '未经您的许可，Camille无权在游戏中使用您的商业和知识产权。',
     "You don't know much about video games but she seems enthusiastic.": '你对电子游戏知之甚少，但她似乎很热情。',
     'Ask for proof': '索要证明',
-    '': '',
-    '': '',
-    '': '',
-    '': '',
-    '': '',
-    '': '',
-    '': '',
+    "You can't be firing people on a whim without any proof.": '没有任何证据，你不可能随心所欲地解雇人。',
+    'Workplace Misconduct': '工作场所不端行为',
+    'A trusted employee, Diana, storms into your office demanding her co-worker be fired after she was slapped.': '一位值得信赖的员工戴安娜闯入你的办公室，要求她的同事在被打耳光后被解雇。',
+    'Question her allegations': '对她的指控提出质疑',
+    "You've known who she is talking about for many years. Something doesn't add up.": '你已经知道她多年来一直在谈论谁。 有些东西没有加起来。',
+    'Deep Sea Barges': '深海驳船',
+    'Fleets of large ships to harvest the darkest corners of every ocean': '大型舰队的船队收获每个海洋最黑暗的角落',
     '': '',
     '': '',
     '': '',
@@ -145,7 +145,7 @@ function cnItem(text) {
     //数组里面没有的，原样返回
     for (var i in cnItems) {
         if (text != i) {
-            console.log("需汉化的英文Item：" + text);
+//            console.log("需汉化的英文Item：" + text);
             return text;
         }
     }
