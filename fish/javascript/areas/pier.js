@@ -2,7 +2,7 @@ var pier = {
     internal: "pier",
     display: "Pier",
     unlock: "river",
-    license: "码头钓鱼许可证",
+    license: "Pier Fishing permit",
     workers: {
         license: "Private Pier Allocation",
         description: "Significant purchasing of public and private piers enables greater utilization of your workers",

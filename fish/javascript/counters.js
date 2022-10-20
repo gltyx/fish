@@ -7,7 +7,7 @@ var counters = {
             .attr("id", "below_messages")
             .appendTo(parent);
         let money = $("<div>")
-            .text("金钱: $")
+            .text("Money: $")
             .appendTo(below);
         $("<span>")
             .attr("id", "money_count")
@@ -190,7 +190,7 @@ var counters = {
                     .appendTo(parent);
             }
             let header = $("<div>")
-                .text(cnItem(window[item.area].display))
+                .text(window[item.area].display)
                 .addClass("counter_header")
                 .fadeIn()
                 .appendTo(parent);
@@ -212,7 +212,7 @@ var counters = {
         let element = $("<div>")
             .attr("id", item.internal)
             .addClass("value")
-            .text(cnItem(item.display) + ": ")
+            .text(item.display + ": ")
             .fadeIn()
             .appendTo(parent);
         $("<span>")

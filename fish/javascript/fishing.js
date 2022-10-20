@@ -17,7 +17,7 @@ var fishing = {
         buttons.create({
             parent: "fishing_buttons",
             id: "cast_out_line",
-            text: "抛出线",
+            text: "Cast out line",
             on_click: function() {
                 fishing.toggle_state(areas.current_area.state);
             }
@@ -25,7 +25,7 @@ var fishing = {
         buttons.create({
             parent: "fishing_buttons",
             id: "reel_in_line",
-            text: "收回线",
+            text: "Reel in line",
             disabled: true,
             on_click: function() {
                 fishing.toggle_state(areas.current_area.state);
@@ -124,10 +124,10 @@ var fishing = {
             .prop("disabled", !state.is_fishing || (worms.count == worms.max));
 
         if (state.is_fishing && !state.reel_in_message) {
-            messenger.write_message("收线总是很无聊", true);
+            messenger.write_message("reeling in your line is always full of tedium", true);
             state.reel_in_message = true;
         } else if (!state.cast_out_message) {
-            messenger.write_message("只要你的胳膊允许，你就把钓索抛出去", true);
+            messenger.write_message("you cast out your line as far as your arm permits", true);
             state.cast_out_message = true;
         }
 
@@ -166,7 +166,7 @@ var fishing = {
                 counters.create_counter(fish, area + "_counters");
             }
 
-            messenger.write_message(cnItem(fish.display) + ": " + fish.message, true);
+            messenger.write_message(fish.display + ": " + fish.message, true);
         }
 
         if (fish.count == null) {

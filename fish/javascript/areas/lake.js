@@ -27,7 +27,7 @@ var lake = {
             if (resources.bait.worms.count == 0 && this.state.is_fishing) {
                 fishing.toggle_state(this.state);
 
-                messenger.write_message("没有任何蠕虫就不会抓到太多......", true);
+                messenger.write_message("won't catch much without any worms...", true);
             }
         }
     },
@@ -44,7 +44,7 @@ var lake = {
         buttons.create({
             parent: "resource_buttons",
             id: "forage_for_worms",
-            text: "寻找蠕虫",
+            text: "Forage for worms",
             on_click: function() {
                 fishing.catch(resources.bait.worms, true);
                 $("#cast_out_line_button")

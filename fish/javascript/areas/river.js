@@ -2,7 +2,7 @@ var river = {
     internal: "river",
     display: "River",
     unlock: "lake",
-    license: "飞钓许可证",
+    license: "Fly Fishing permit",
     workers: {
         license: "Mass Angler Dissuasion",
         description: "Construct fences and warning signs along river banks to deter competition",
@@ -69,16 +69,16 @@ var river = {
             buttons.create({
                 parent: "resource_buttons",
                 id: "river_troll",
-                text: "跟河怪说话",
+                text: "Talk to the River Troll",
                 on_click: function() {
                     river.queue_change = true;
                     $("<div>")
                         .attr("id", "river_troll_text")
-                        .text("你将需要 "
-                            + "新的诱饵和钓具 "
-                            + "在这了钓鱼，为何 "
-                            + "你不去找找 "
-                            + "商店?")
+                        .text("You are going to need "
+                            + "new bait and tackle "
+                            + "to fish here, why "
+                            + "don't you head to the "
+                            + "shop?")
                         .appendTo(section);
                     $("<div>")
                         .attr("id", "river_troll_outline")

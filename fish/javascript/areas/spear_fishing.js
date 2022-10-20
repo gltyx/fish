@@ -2,7 +2,7 @@ var spear_fishing = {
     internal: "spear_fishing",
     display: "Spear Fishing",
     unlock: "reef",
-    license: "鱼叉捕鱼许可证",
+    license: "Spear Fishing permit",
     ocean: true,
     workers: {
         license: "Spear Wielding SCUBA Teams",

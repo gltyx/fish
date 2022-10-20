@@ -2,7 +2,7 @@ var business = {
     internal: "business",
     display: "Business",
     unlock: "deep_sea",
-    license: "买下商店",
+    license: "Buy the Shop",
     purchased: {
         price: 15000
     },
@@ -250,7 +250,7 @@ var business = {
         if (this.vendor.shown.length == 0) {
             $("<div>")
                 .attr("id", "no_investments")
-                .text("没有可用的投资！")
+                .text("No investments available!")
                 .appendTo(investments);
         } else {
             $("#hire_worker_button")
@@ -280,7 +280,7 @@ var business = {
             $("<div>")
                 .attr("id", index + "_workers_header")
                 .addClass("counter_header")
-                .text(cnItem(area.display))
+                .text(area.display)
                 .appendTo(parent);
             $("<div>")
                 .addClass("counter_break")
@@ -355,7 +355,7 @@ var business = {
     purchase() {
         $("#shop_button")
             .attr("id", "business_button")
-            .text("商业")
+            .text("Business")
             .off("click")
             .click(function() {
                 areas.switch_area(business);
@@ -505,20 +505,20 @@ var business = {
             .appendTo(above);
         $("<div>")
             .attr("id", "morality_header")
-            .text("道德: " + opportunities.morality)
+            .text("Morality: " + opportunities.morality)
             .appendTo(morality_section);
         $("<div>")
             .addClass("counter_break")
             .appendTo(morality_section);
         $("<span>")
             .attr("id", "morality_meter")
-            .text(cnItem(opportunities.get_morality_text()))
+            .text(opportunities.get_morality_text())
             .appendTo(morality_section);
         
         buttons.create({
             parent: "above_section",
             id: "opportunities",
-            text: "管理和投资",
+            text: "Management and Investments",
             on_click: function() {
                 buttons.remove("opportunities");
 
