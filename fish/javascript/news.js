@@ -208,7 +208,7 @@ var news = {
     create_element(text) {
         $("<div>")
             .attr("id", "news_text")
-            .text(cnItem(text))
+            .text(text)
             .one("webkitAnimationEnd oanimationend msAnimationEnd animationend", function() {
                 $(this)
                     .remove();
@@ -276,9 +276,9 @@ var news = {
                     days: days
                 }
 
-                let result = cnItem(country) + " " + modifier + " \"" + cnItem(area.display) + "\" 鱼.";
+                let result = country + " " + modifier + " \"" + area.display + "\" fish.";
 
-                messenger.write_message(result + " 这些鱼不会获得任何利润 " + days + " 天。");
+                messenger.write_message(result + " No profits will be gained from these fish for " + days + " days.");
                 this.create_element(result);
 
                 fishing.locked_areas.push({

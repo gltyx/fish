@@ -22,13 +22,13 @@ var buttons = {
             let regular = (header.regular == null ? "" : header.regular);
             $(element)
                 .html("<div class='button_header'>"
-                    + "<span class='button_header_title'>" + cnItem(bold) + "</span> " 
+                    + "<span class='button_header_title'>" + bold + "</span> " 
                     + "<span class='button_header_extra'>" + regular + "</span></div>");
         }
 
         // set text
         if (options.text != null) {
-            let text = (typeof options.text == "string" ? cnItem(options.text) : options.text());
+            let text = (typeof options.text == "string" ? options.text : options.text());
             if (header != null) {
                 $(element)
                     .html($(element).html() + "<span class='button_text'>" + text + "</span>");

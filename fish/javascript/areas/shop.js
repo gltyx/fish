@@ -8,7 +8,7 @@ var shop = {
                 parent: "above_section",
                 id: "sell_fish",
                 text: function() {
-                    return "卖鱼 ($" + main.stringify(shop.fish_value(false)) + ")";
+                    return "Sell fish ($" + main.stringify(shop.fish_value(false)) + ")";
                 },
                 on_click: function() {
                     shop.sell_fish();
@@ -26,7 +26,7 @@ var shop = {
             data: {
                 parent: "misc_section",
                 id: "buy_fuel",
-                text: "燃料 ($5)",
+                text: "Fuel ($5)",
                 on_click: function() {
                     shop.purchase_item(resources.fuel);
                 },
@@ -71,7 +71,7 @@ var shop = {
         } else {
             let value = this.fish_value(false);
             $("#sell_fish_button")
-                .text("卖鱼 ($" + value + ")")
+                .text("Sell fish ($" + value + ")")
                 .prop("disabled", value == 0);
         }
     },
@@ -86,7 +86,7 @@ var shop = {
         for (let name of names) {
             $("<div>")
                 .attr("id", name.toLowerCase() + "_section")
-                .attr("display", cnItem(name))
+                .attr("display", name)
                 .addClass("before section")
                 .appendTo(parent);
         }
@@ -170,7 +170,7 @@ var shop = {
         this.update_money(this.fish_value(true));
 
         $("#sell_fish_button")
-            .text("卖鱼 ($0)");
+            .text("Sell fish ($0)");
     },
 
     purchase_item(item) {
@@ -237,7 +237,7 @@ var shop = {
             data: {
                 parent: section + "_section",
                 id: item.internal,
-                text: cnItem(item.display) + " ($" + main.stringify(item.price) + ")",
+                text: item.display + " ($" + main.stringify(item.price) + ")",
                 on_click: function() {
                     shop.purchase_item(item);
                 },
@@ -259,7 +259,7 @@ var shop = {
                 data: {
                     parent: "misc_section",
                     id: resource.internal + "_auto_buy",
-                    text: "自动购买 " + cnItem(resource.display) + " ($" + main.stringify(item.price) + ")",
+                    text: "Auto buy " + resource.display + " ($" + main.stringify(item.price) + ")",
                     on_click: function() {
                         counters.add_auto_buy(resource);
                         shop.remove_item(resource.internal + "_auto_buy");
@@ -304,7 +304,7 @@ var shop = {
                 $("<p>")
                     .attr("id", "no_sale_" + id)
                     .addClass("no_sale")
-                    .text("没什么可卖的!")
+                    .text("Nothing for sale!")
                     .appendTo(parent);
             }
         }

@@ -7,7 +7,7 @@ var counters = {
             .attr("id", "below_messages")
             .appendTo(parent);
         let money = $("<div>")
-            .text("金钱: $")
+            .text("Money: $")
             .appendTo(below);
         $("<span>")
             .attr("id", "money_count")
@@ -20,7 +20,7 @@ var counters = {
         // create bait counter
         $("<div>")
             .attr("id", "bait_counters")
-            .attr("display", "鱼饵")
+            .attr("display", "Bait")
             .addClass("before counter")
             .hide()
             .appendTo(parent);
@@ -34,7 +34,7 @@ var counters = {
         // create tackle counter
         $("<div>") 
             .attr("id", "tackle_counters")
-            .attr("display", "钓具")
+            .attr("display", "Tackle")
             .addClass("before tackle counter")
             .hide()
             .appendTo(parent);
@@ -50,7 +50,7 @@ var counters = {
         // create fish counter
         let fish = $("<div>")
             .attr("id", "fish_counters")
-            .attr("display", "鱼")
+            .attr("display", "Fish")
             .addClass("before counter")
             .hide()
             .appendTo(parent);
@@ -190,7 +190,7 @@ var counters = {
                     .appendTo(parent);
             }
             let header = $("<div>")
-                .text(cnItem(window[item.area].display))
+                .text(window[item.area].display)
                 .addClass("counter_header")
                 .fadeIn()
                 .appendTo(parent);
@@ -212,7 +212,7 @@ var counters = {
         let element = $("<div>")
             .attr("id", item.internal)
             .addClass("value")
-            .text(cnItem(item.display) + ": ")
+            .text(item.display + ": ")
             .fadeIn()
             .appendTo(parent);
         $("<span>")

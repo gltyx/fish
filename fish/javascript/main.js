@@ -121,31 +121,31 @@ var main = {
     },
 
     end() {
-        let text = $.parseHTML("恭喜你已经到了游戏的终点 - 现在！<br><br>"
-            + "<span id='restart_2' class='link' onclick='settings.restart_game()'>点击此处重新开始游戏。</span><br><br>"
-            + "你可以 <a class='link' target='_blank' href='https://twitter.com/FishEnterprises'>在 Twitter 上关注我</a> 获取最新动态。 "
-            + "捐赠我们可以通过 <a class='link' target='_blank' href='https://paypal.me/fishingenterprises'>Paypal</a> "
-            + "或者 <a class='link' target='_blank' href='https://www.patreon.com/fishingenterprises'>Patreon</a> 支持我，并获得频繁的更新和更新日志.<br><br>"
-            + "我希望你喜欢并继续玩！ <>< <>< <><");
+        let text = $.parseHTML("Congratulations you've reached the end of the game -- for now!<br><br>"
+            + "<span id='restart_2' class='link' onclick='settings.restart_game()'>Click here to restart the game.</span><br><br>"
+            + "You can <a class='link' target='_blank' href='https://twitter.com/FishEnterprises'>follow my Twitter</a> for releases, "
+            + "donate via <a class='link' target='_blank' href='https://paypal.me/fishingenterprises'>Paypal</a> "
+            + "or support me and get frequent updates and changelogs with <a class='link' target='_blank' href='https://www.patreon.com/fishingenterprises'>Patreon</a>.<br><br>"
+            + "I hope you enjoyed your time and continue playing! <>< <>< <><");
         this.create_popup("Goodbye", text);
     },
 
     show_settings() {
-        let text = $.parseHTML("<div id='settings_div'>主题颜色: "
-            + "<span id='lights_on' class='link' onclick='lights.toggle(true)'>白色</span> | "
-            + "<span id='lights_off' class='link' onclick='lights.toggle(false)'>黑色</span><br><br>"
-            + "存档: "
-            + "<span id='download_save' class='link' onclick='settings.download_save()'>下载存档</span> | "
-            + "<label class='link'><input id='upload_save' type='file'/>上传存档</label> | "
-            + "<span id='restart_game'>重新开始</span><br>"
-            + "自动保存间隔:<br>"
+        let text = $.parseHTML("<div id='settings_div'>Color theme: "
+            + "<span id='lights_on' class='link' onclick='lights.toggle(true)'>light</span> | "
+            + "<span id='lights_off' class='link' onclick='lights.toggle(false)'>dark</span><br><br>"
+            + "Saves: "
+            + "<span id='download_save' class='link' onclick='settings.download_save()'>download save</span> | "
+            + "<label class='link'><input id='upload_save' type='file'/>upload save</label> | "
+            + "<span id='restart_game'>restart game</span><br>"
+            + "Auto save every:<br>"
             + "<p id='save_intervals'>"
-            + "<span id='3_minutes'>3分钟</span> | "
-            + "<span id='5_minutes'>5分钟</span> | "
-            + "<span id='10_minutes'>10分钟</span></p><br>"
-//            + "开发工具: "
-//            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>启用</span> | "
-//            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>禁用</span><br><br>"
+            + "<span id='3_minutes'>three minutes</span> | "
+            + "<span id='5_minutes'>five minutes</span> | "
+            + "<span id='10_minutes'>ten minutes</span></p><br>"
+            + "Dev tools: "
+            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>enable</span> | "
+            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>disable</span><br><br>"
             + "<span id='version'></span>"
             + "<br></div>");
         this.create_popup("Settings", text);
@@ -177,7 +177,7 @@ var main = {
         settings.toggle_dev_tools((settings.dev == null ? false : settings.dev));
 
         $("#version")
-            .text("当前版本: " + this.version);
+            .text("Current version: " + this.version);
     },
 
     show_about() {
@@ -216,7 +216,7 @@ var main = {
 
         let head = $("<h3>")
             .addClass("centered")
-            .text(cnItem(header))
+            .text(header)
             .appendTo(popup);
         $("<div>")
             .addClass("divider")
@@ -234,7 +234,7 @@ var main = {
             buttons.create({
                 parent: "content",
                 id: "close",
-                text: "关闭",
+                text: "Close",
                 breaks: 0,
                 on_click: function() {
                     $(overlay)
