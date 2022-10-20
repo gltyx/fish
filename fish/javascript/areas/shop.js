@@ -84,9 +84,17 @@ var shop = {
 
         let names = ["Bait", "Tackle", "Misc"];
         for (let name of names) {
+            var newname = ''
+            if(name === 'Bait'){
+                newname = '鱼饵'
+            }else if(name === 'Tackle'){
+                newname = '钓具'
+            }else if(name === 'Misc'){
+                newname = '杂项'
+            }
             $("<div>")
                 .attr("id", name.toLowerCase() + "_section")
-                .attr("display", name)
+                .attr("display", newname)
                 .addClass("before section")
                 .appendTo(parent);
         }

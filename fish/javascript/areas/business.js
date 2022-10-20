@@ -205,7 +205,7 @@ var business = {
 
         let news_section = $("<div>")
             .attr("id", "news_section")
-            .attr("display", "News")
+            .attr("display", "新闻")
             .addClass("before section_span")
             .appendTo(sections);
         $("<div>")
@@ -215,13 +215,13 @@ var business = {
 
         let management = $("<div>")
             .attr("id", "management_section")
-            .attr("display", "Management")
+            .attr("display", "管理")
             .addClass("before section")
             .appendTo(sections);
 
         let investments = $("<div>")
             .attr("id", "investments_section")
-            .attr("display", "Investments")
+            .attr("display", "投资")
             .addClass("before section section_center section_top")
             .appendTo(sections);
 

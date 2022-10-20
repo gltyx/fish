@@ -143,9 +143,9 @@ var main = {
             + "<span id='3_minutes'>three minutes</span> | "
             + "<span id='5_minutes'>five minutes</span> | "
             + "<span id='10_minutes'>ten minutes</span></p><br>"
-            + "Dev tools: "
-            + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>enable</span> | "
-            + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>disable</span><br><br>"
+            // + "Dev tools: "
+            // + "<span id='dev_enable' class='link' onclick='settings.toggle_dev_tools(true)'>enable</span> | "
+            // + "<span id='dev_disable' class='link' onclick='settings.toggle_dev_tools(false)'>disable</span><br><br>"
             + "<span id='version'></span>"
             + "<br></div>");
         this.create_popup("Settings", text);
